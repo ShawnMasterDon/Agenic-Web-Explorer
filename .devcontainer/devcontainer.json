@@ -1,0 +1,12 @@
+
+ {
+  "image": "python:3.11", "mcr.microsoft.com/devcontainers/universal:2",
+  "extensions": [
+    "ms-python.python",
+    "ms-vscode.vscode-python"
+  ],
+  "forwardPorts": [
+    8000
+  ],
+  "postCreateCommand": "pip install -r requirements.txt && source .env"
+}
